@@ -1,0 +1,17 @@
+Algoritmo Ejercicio10
+	numeroMil <- 0
+	cantidadMultiplos6 <- 0
+	suma <- 0
+	Repetir
+		Escribir 'Ingrese un número para que se sume y llegue a 1000, numero actual ',numeroMil
+		Leer var
+		numeroMil <- numeroMil+var
+		Si (var MOD 6=0) Entonces
+			cantidadMultiplos6 <- cantidadMultiplos6+1
+		FinSi
+		Si (var>=1 Y var<=10) Entonces
+			suma <- suma+var
+		FinSi
+	Hasta Que (numeroMil<=1000)
+	Escribir 'La cantidad números múltiplos de 6 ',cantidadMultiplos6,' y la suma de números que se encuentrarn entre 1 y 10',suma
+FinAlgoritmo
